@@ -11,10 +11,15 @@ export const products = [
     name: "Golden Aura Buddha Painting",
     category: "Paintings",
     price: 499,
+      mrp: 999,    
+
     colors: ["Gold", "Black", "Brown"],
     sizes: ["S", "M", "L"],
     description:"Polyresin Lord Ganesha Idol on Handcrafted Green Floral Plate for Home, Office and Car Dashboard",
     images: [
+      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1510284876186-b1a84b94418f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://images.unsplash.com/photo-1510284876186-b1a84b94418f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -25,6 +30,8 @@ export const products = [
     name: "Vintage Floral Wall Painting",
     category: "Paintings",
     price: 349,
+          mrp: 999,    
+
     colors: ["Beige", "Brown", "Green"],
     sizes: ["M", "L"],
     description:"Polyresin Lord Ganesha Idol on Handcrafted Green Floral Plate for Home, Office and Car Dashboard",
@@ -39,6 +46,8 @@ export const products = [
     name: "Abstract Color Splash Painting",
     category: "Paintings",
     price: 599,
+          mrp: 999,    
+
     colors: ["Multicolor"],
     sizes: ["S", "L"],
     description:"Polyresin Lord Ganesha Idol on Handcrafted Green Floral Plate for Home, Office and Car Dashboard",
@@ -53,6 +62,8 @@ export const products = [
     name: "Mountain Landscape Canvas",
     category: "Paintings",
     price: 699,
+          mrp: 999,    
+
     colors: ["Blue", "Grey", "White"],
     sizes: ["M", "L"],
     description:"Polyresin Lord Ganesha Idol on Handcrafted Green Floral Plate for Home, Office and Car Dashboard",
@@ -67,6 +78,8 @@ export const products = [
     name: "Minimalist Line Art Portrait",
     category: "Paintings",
     price: 299,
+          mrp: 999,    
+
     colors: ["Black", "White"],
     sizes: ["S", "M"],
     description:"Polyresin Lord Ganesha Idol on Handcrafted Green Floral Plate for Home, Office and Car Dashboard",
@@ -83,6 +96,8 @@ export const products = [
     name: "Bronze Horse Sculpture",
     category: "Sculptures",
     price: 899,
+          mrp: 999,    
+
     colors: ["Bronze", "Black"],
     sizes: ["M", "L"],
     description:"Polyresin Lord Ganesha Idol on Handcrafted Green Floral Plate for Home, Office and Car Dashboard",
@@ -97,6 +112,8 @@ export const products = [
     name: "Marble Abstract Sculpture",
     category: "Sculptures",
     price: 1299,
+          mrp: 999,    
+
     colors: ["White", "Grey"],
     sizes: ["L"],
     description:"Polyresin Lord Ganesha Idol on Handcrafted Green Floral Plate for Home, Office and Car Dashboard",
@@ -111,6 +128,8 @@ export const products = [
     name: "Wooden Tribal Face Art",
     category: "Sculptures",
     price: 579,
+          mrp: 999,    
+
     colors: ["Brown", "Dark Brown"],
     sizes: ["M"],
     description:"Polyresin Lord Ganesha Idol on Handcrafted Green Floral Plate for Home, Office and Car Dashboard",
@@ -125,6 +144,8 @@ export const products = [
     name: "Metal Wire Human Sculpture",
     category: "Sculptures",
     price: 749,
+          mrp: 999,    
+
     colors: ["Silver", "Black"],
     sizes: ["S", "M"],
     description:"Polyresin Lord Ganesha Idol on Handcrafted Green Floral Plate for Home, Office and Car Dashboard",
@@ -139,6 +160,8 @@ export const products = [
     name: "Mini Garden Fairy Statue",
     category: "Sculptures",
     price: 249,
+          mrp: 999,    
+
     colors: ["White", "Grey"],
     sizes: ["S"],
     description:"Polyresin Lord Ganesha Idol on Handcrafted Green Floral Plate for Home, Office and Car Dashboard",
@@ -155,6 +178,8 @@ export const products = [
     name: "Ceramic Flower Vase",
     category: "Home Decor",
     price: 199,
+          mrp: 999,    
+
     colors: ["White", "Blue", "Pink"],
     sizes: ["S", "M", "L"],
     images: [
@@ -168,6 +193,8 @@ export const products = [
     name: "Designer Wall Clock",
     category: "Home Decor",
     price: 329,
+          mrp: 999,    
+
     colors: ["Gold", "Black"],
     sizes: ["M"],
     images: [
@@ -181,6 +208,8 @@ export const products = [
     name: "Handwoven Cotton Rug",
     category: "Home Decor",
     price: 459,
+          mrp: 999,    
+
     colors: ["Grey", "Cream", "Brown"],
     sizes: ["M", "L"],
     images: [
@@ -194,6 +223,8 @@ export const products = [
     name: "Tabletop Candle Holder",
     category: "Home Decor",
     price: 149,
+          mrp: 999,    
+
     colors: ["Black", "Gold"],
     sizes: ["S"],
     images: [
@@ -207,6 +238,8 @@ export const products = [
     name: "Elegant Glass Lamp",
     category: "Home Decor",
     price: 699,
+          mrp: 999,    
+
     colors: ["White", "Yellow"],
     sizes: ["M"],
     images: [
@@ -222,6 +255,8 @@ export const products = [
     name: "Handmade Clay Pot",
     category: "Handmade Crafts",
     price: 159,
+          mrp: 999,    
+
     colors: ["Terracotta", "Brown"],
     sizes: ["S", "M"],
     images: [
@@ -235,6 +270,8 @@ export const products = [
     name: "Beaded Dreamcatcher",
     category: "Handmade Crafts",
     price: 249,
+          mrp: 999,    
+
     colors: ["Blue", "White", "Pink"],
     sizes: ["M"],
     images: [
@@ -248,6 +285,8 @@ export const products = [
     name: "Handcrafted Wooden Box",
     category: "Handmade Crafts",
     price: 399,
+          mrp: 999,    
+
     colors: ["Brown", "Dark Brown"],
     sizes: ["S", "M"],
     images: [
@@ -261,6 +300,8 @@ export const products = [
     name: "Handpainted Ceramic Plate",
     category: "Handmade Crafts",
     price: 299,
+          mrp: 999,    
+
     colors: ["Blue", "White"],
     sizes: ["M"],
     images: [
@@ -274,6 +315,8 @@ export const products = [
     name: "Custom Embroidery Frame",
     category: "Handmade Crafts",
     price: 199,
+          mrp: 999,    
+
     colors: ["Multicolor"],
     sizes: ["S"],
     images: [
@@ -289,6 +332,8 @@ export const products = [
     name: "Krishna Brass Idol",
     category: "Spiritual Items",
     price: 799,
+          mrp: 999,    
+
     colors: ["Gold", "Bronze"],
     sizes: ["S", "M"],
     images: [
@@ -302,6 +347,8 @@ export const products = [
     name: "Ganesh Marble Statue",
     category: "Spiritual Items",
     price: 899,
+          mrp: 999,    
+
     colors: ["White"],
     sizes: ["M", "L"],
     images: [
@@ -315,6 +362,8 @@ export const products = [
     name: "Sandalwood Mala",
     category: "Spiritual Items",
     price: 149,
+          mrp: 999,    
+
     colors: ["Brown"],
     sizes: ["One Size"],
     images: [
@@ -328,6 +377,8 @@ export const products = [
     name: "Pooja Brass Diya",
     category: "Spiritual Items",
     price: 129,
+          mrp: 999,    
+
     colors: ["Gold"],
     sizes: ["S"],
     images: [
@@ -341,6 +392,8 @@ export const products = [
     name: "Om Wall Hanging",
     category: "Spiritual Items",
     price: 249,
+          mrp: 999,    
+
     colors: ["Gold", "Brown"],
     sizes: ["M"],
     images: [

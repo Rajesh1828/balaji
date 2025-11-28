@@ -15,12 +15,17 @@ import BuddhaPaintings from './pages/BuddhaPaintings'
 import Login from './pages/Login'
 import Cart from './pages/Cart'
 import Products from './pages/Products'
+  import { ToastContainer} from 'react-toastify';
+  import "react-toastify/dist/ReactToastify.css";
+
+
 
 
 const App = () => {
   return (
     <>
   <Navbar/>
+  <ToastContainer/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/collections' element={<Collections/>}/>

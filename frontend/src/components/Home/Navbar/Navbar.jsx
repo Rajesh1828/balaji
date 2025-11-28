@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { assets } from "../../../assets/assets";
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
@@ -6,6 +6,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaPhoneAlt, FaWhatsapp } from "rea
 import { IoMail, IoCart } from "react-icons/io5";
 import { NavLink, Link } from 'react-router-dom'
 import { CgProfile } from "react-icons/cg";
+import { GiftContext } from "../../../context/GiftContext";
 
 
 
@@ -13,6 +14,7 @@ import { CgProfile } from "react-icons/cg";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const { getCartItemsCount } = useContext(GiftContext);
 
   return (
     <>
@@ -47,46 +49,63 @@ const Navbar = () => {
           </Link>
           {/* searchbar */}
           <input type="search" placeholder="Search here" className="px-2 md:w-[50%] w-[40%] py-[5px] rounded-lg  bg-[#ffffff]  focus:outline-none " />
-          <div className="flex gap-5">
-            <Link to='/cart' className='flex gap-2 items-center justify-center'><IoCart className='text-2xl' /> <span className="text-sm font-bold hidden md:flex">Cart</span>
-            </Link>
+          <div className="flex gap-5 relative">
+            {/* cart */}
+
+           <Link to="/cart" className="relative flex font-bold items-center gap-2">
+ Cart <IoCart className="text-2xl" />
+
+  {getCartItemsCount() > 0 && (
+    <span className="
+      absolute -top-2 -right-2 
+      bg-red-500 text-white text-xs 
+      w-5 h-5 flex items-center justify-center 
+      rounded-full font-bold shadow-md
+    ">
+      {getCartItemsCount()}
+    </span>
+  )}
+</Link>
+
+
+
             <Link to='/login' className='flex gap-2 items-center justify-center '>  <CgProfile /><span className=" text-sm font-bold hidden md:flex gap-2 items-center justify-center">
               Login</span>
             </Link>
-              <button
-            className="md:hidden text-3xl"
-            onClick={() => setOpen(!open)}
-          >
-            {open ? <RxCross1 /> : <CiMenuFries />}
-          </button>
+            <button
+              className="md:hidden text-3xl"
+              onClick={() => setOpen(!open)}
+            >
+              {open ? <RxCross1 /> : <CiMenuFries />}
+            </button>
           </div>
 
 
         </div>
 
-         {/* menu */}
+        {/* menu */}
         <div className=" hidden  max-full mx-auto text-sm md:flex justify-center items-center bg-[#ffffff] px-4 h-12">
           <ul className="hidden md:flex gap-8 font-medium">
 
-            <NavLink to='/'className={({isActive})=>(isActive?"active":'')}>
+            <NavLink to='/' className={({ isActive }) => (isActive ? "active" : '')}>
 
               <li className="cursor-pointer hover:text-red-600">Home</li>
             </NavLink>
-            <NavLink to='/about' className={({isActive})=>(isActive?"active":'')}>
+            <NavLink to='/about' className={({ isActive }) => (isActive ? "active" : '')}>
 
               <li className="cursor-pointer hover:text-red-600">About</li>
             </NavLink>
-            <NavLink to='/collections' className={({isActive})=>(isActive?"active":'')}>
+            <NavLink to='/collections' className={({ isActive }) => (isActive ? "active" : '')}>
 
               <li className="cursor-pointer hover:text-red-600">Collections</li>
             </NavLink>
 
-            <NavLink to='/contact' className={({isActive})=>(isActive?"active":'')}>
+            <NavLink to='/contact' className={({ isActive }) => (isActive ? "active" : '')}>
 
               <li className="cursor-pointer hover:text-red-600">Contact</li>
             </NavLink>
           </ul>
-        
+
         </div>
 
         {/* Mobile Menu (Smooth Slide Down) */}
@@ -96,20 +115,20 @@ const Navbar = () => {
         >
           {open && (
             <div className="space-y-3">
-              <NavLink to='/' className={({isActive})=>(isActive?"active":'')}>
+              <NavLink to='/' className={({ isActive }) => (isActive ? "active" : '')}>
                 <p onClick={() => setOpen(false)} className="cursor-pointer  pb-2">Home</p>
               </NavLink>
-              <NavLink to='/about' className={({isActive})=>(isActive?"active":'')}>
+              <NavLink to='/about' className={({ isActive }) => (isActive ? "active" : '')}>
 
                 <p onClick={() => setOpen(false)} className="cursor-pointer  pb-2">About</p>
               </NavLink>
 
-              <NavLink to='/collections' className={({isActive})=>(isActive?"active":'')}>
+              <NavLink to='/collections' className={({ isActive }) => (isActive ? "active" : '')}>
 
                 <p onClick={() => setOpen(false)} className="cursor-pointer  pb-2">Collections</p>
               </NavLink>
 
-              <NavLink to='/contact' className={({isActive})=>(isActive?"active":'')}>
+              <NavLink to='/contact' className={({ isActive }) => (isActive ? "active" : '')}>
 
                 <p onClick={() => setOpen(false)} className="cursor-pointer  pb-2">Contact</p>
               </NavLink>
